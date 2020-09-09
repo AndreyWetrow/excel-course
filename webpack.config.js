@@ -43,7 +43,7 @@ module.exports = {
   devtool: isDev ? "source-map" : false,
   devServer: {
     port: 3000,
-    hot: isDev,
+    // hot: isDev,
   },
   plugins: [
     new CleanWebpackPlugin(),
@@ -84,7 +84,10 @@ module.exports = {
           "sass-loader",
         ],
       },
-      {test: /\.js$/, exclude: /node_modules/, use: jsLoaders()},
+      {
+        test: /\.js$/, exclude: /node_modules/,
+        use: jsLoaders(),
+      },
     ],
   },
 };
