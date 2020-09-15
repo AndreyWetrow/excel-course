@@ -6,7 +6,7 @@
     "node": true
   },
   "rules": {
-    "semi": "off",
+    "semi": [2, "always", { "omitLastInOneLineBlock": true}],
     "max-len": "off",
     "operator-linebreak": "off",
     "linebreak-style": "off",
